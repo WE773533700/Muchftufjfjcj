@@ -31,10 +31,7 @@ from ShizukaXMusic.utils.stream.stream import stream
 
 force_btn = InlineKeyboardMarkup(
     [
-        [
-           
-                text="اشترك هنا", url="https://t.me/S_U_J"
-            ),                        
+        [                                                      
         ],        
     ]
 )
