@@ -8,7 +8,6 @@ from aiohttp import ClientSession
 from pyrogram import filters, Client
 from strings import get_command
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 #########
 #الاوامر    
