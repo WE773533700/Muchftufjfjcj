@@ -20,6 +20,9 @@ SKIP_COMMAND = get_command("SKIP_COMMAND")
 @app.on_message(
     filters.command(SKIP_COMMAND) & filters.group & ~filters.edited & ~BANNED_USERS
 )
+@app.on_message(
+    filters.command(["التالي","لندا غيري","تخطي"],"") & filters.group & ~filters.edited & ~BANNED_USERS
+
 @AdminRightsCheck
 async def skip(cli, message: Message, _, chat_id):
     if not len(message.command) < 2:
