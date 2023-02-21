@@ -35,7 +35,7 @@ force_btn = InlineKeyboardMarkup(
 
         [
 
-            InlineKeyboardButton(
+            (
 
                 text="قناة البوت", url=f"{CHANNEL_SUDO}"
 
