@@ -44,19 +44,18 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistant Clients")
+        LOGGER(__name__).info(f"Gettings Assistants Info...")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Best_FriendsFor_Ever")
-                await self.one.join_chat("Star_X_Network")
+                await self.one.join_chat("FH_KP")
+                await self.one.join_chat("FH_KP")
             except:
                 pass
             assistants.append(1)
             get_me = await self.one.get_me()
             self.one.username = get_me.username
             self.one.id = get_me.id
-            self.one.mention = get_me.mention
             assistantids.append(get_me.id)
             if get_me.last_name:
                 self.one.name = (
@@ -79,15 +78,14 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("Best_FriendsFor_Ever")
-                await self.two.join_chat("Star_X_Network")
+                await self.two.join_chat("FH_KP")
+                await self.two.join_chat("FH_KP")
             except:
                 pass
             assistants.append(2)
             get_me = await self.two.get_me()
             self.two.username = get_me.username
             self.two.id = get_me.id
-            self.two.mention = get_me.mention
             assistantids.append(get_me.id)
             if get_me.last_name:
                 self.two.name = (
@@ -110,15 +108,14 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("Best_FriendsFor_Ever")
-                await self.three.join_chat("Star_X_Network")
+                await self.three.join_chat("FH_KP")
+                await self.three.join_chat("FH_KP")
             except:
                 pass
             assistants.append(3)
             get_me = await self.three.get_me()
             self.three.username = get_me.username
             self.three.id = get_me.id
-            self.three.mention = get_me.mention
             assistantids.append(get_me.id)
             if get_me.last_name:
                 self.three.name = (
@@ -141,15 +138,14 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("Best_FriendsFor_Ever")
-                await self.four.join_chat("Star_X_Network")
+                await self.four.join_chat("FH_KP")
+                await self.four.join_chat("FH_KP")
             except:
                 pass
             assistants.append(4)
             get_me = await self.four.get_me()
             self.four.username = get_me.username
             self.four.id = get_me.id
-            self.four.mention = get_me.mention
             assistantids.append(get_me.id)
             if get_me.last_name:
                 self.four.name = (
@@ -172,15 +168,14 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("Best_FriendsFor_Ever")
-                await self.five.join_chat("Star_X_Network")
+                await self.five.join_chat("FH_KP")
+                await self.five.join_chat("FH_KP")
             except:
                 pass
             assistants.append(5)
             get_me = await self.five.get_me()
             self.five.username = get_me.username
             self.five.id = get_me.id
-            self.five.mention = get_me.mention
             assistantids.append(get_me.id)
             if get_me.last_name:
                 self.five.name = (
