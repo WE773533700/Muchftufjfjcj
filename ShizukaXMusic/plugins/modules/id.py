@@ -23,7 +23,6 @@ def ids(_, message):
     )
 @app.on_message(filters.command(["السورس","سورس"],""))
 def sourc(client: Client, message: Message):
-    await message.reply_photo(
         photo=f"https://telegra.ph/file/10dfb95793ff3d40e0a90.jpg",
         caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
