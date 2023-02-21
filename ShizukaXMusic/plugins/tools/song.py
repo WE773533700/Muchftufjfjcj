@@ -21,7 +21,6 @@ ydl_opts = {
 
 @app.on_message(
     filters.command(["تحميل","يوتيوب","بحث"],"") & filters.group & ~filters.edited & ~BANNED_USERS
-def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("- **ابشر جاري البحث ..**")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
