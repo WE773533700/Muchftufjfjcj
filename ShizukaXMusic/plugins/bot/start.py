@@ -270,13 +270,21 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
-async def start(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, sʜɪᴢᴜᴋᴀ ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [sᴛᴀʀ ʙᴏɪ](https://t.me/its_star_boi)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [sʜɪᴢᴜᴋᴀ ʜᴇʟᴘ](https://t.me/Star_X_Network)\n┣★ ʀᴇᴘᴏ › : [sʜɪᴢᴜᴋᴀ ʀᴇᴘᴏ](https://github.com/its-star-boi/ShizukaXMusic)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/its_star_boi) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
-""",
+@app.on_message(commandpro(["مطور", "المطور"]) & ~filters.edited)
+async def sourc(client: Client, message: Message):
+    await message.reply_p8hoto(
+        photo=f"https://telegra.ph/file/10dfb95793ff3d40e0a90.jpg",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/best_friendsfor_ever")]]
+            [[InlineKeyboardButton("تحديثات لنـدا", url=f"https://t.me/FH_KP")]]
+        ),
+    )
+@app.on_message(commandpro(["السورس", "سورس"]) & ~filters.edited)
+async def sourc(client: Client, message: Message):
+    await message.reply_p8hoto(
+        photo=f"https://telegra.ph/file/10dfb95793ff3d40e0a90.jpg",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("تحديثات لنـدا", url=f"https://t.me/FH_KP")]]
         ),
     )
