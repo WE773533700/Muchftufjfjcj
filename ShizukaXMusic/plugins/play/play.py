@@ -27,6 +27,48 @@ from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
 from ShizukaXMusic.utils.logger import play_logs
 from ShizukaXMusic.utils.stream.stream import stream
 
+
+
+force_btn = InlineKeyboardMarkup(
+
+    [
+
+        [
+
+            InlineKeyboardButton(
+
+                text="قناة البوت", url=f"{CHANNEL_SUDO}"
+
+            ),                        
+
+        ],        
+
+    ]
+
+)
+
+
+
+async def check_is_joined(message):    
+
+    try:
+
+        userid = message.from_user.id
+
+        status = await app.get_chat_member(f"{CHANNEL}", userid)
+
+        return True
+
+    except Exception:
+
+        await message.reply_text( "من فضلك أشترك في قناة البوت ." ,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+
+        return False
+        
+        
+        
+        
+        
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
@@ -34,6 +76,9 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 @app.on_message(
     filters.command(PLAY_COMMAND) & filters.group & ~filters.edited & ~BANNED_USERS
 )
+@app.on_message(
+    filters.command(["شغل","تشغيل","شغلي","لنداشغلي"],"") & filters.group & ~filters.edited & ~BANNED_USERS
+
 @PlayWrapper
 async def play_commnd(
     client,
