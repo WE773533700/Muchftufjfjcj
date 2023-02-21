@@ -24,6 +24,7 @@ SKIP_COMMAND = get_command("SKIP_COMMAND")
     filters.command(["التالي","لندا غيري","تخطي"],"") & filters.group & ~filters.edited & ~BANNED_USERS
 
 @AdminRightsCheck
+    
 async def skip(cli, message: Message, _, chat_id):
     if not len(message.command) < 2:
         loop = await get_loop(chat_id)
