@@ -17,7 +17,6 @@ from strings import get_command
 from ShizukaXMusic import YouTube, app
 from ShizukaXMusic.utils.decorators.language import language, languageCB
 from ShizukaXMusic.utils.formatters import convert_bytes
-from ShizukaXMusic.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
