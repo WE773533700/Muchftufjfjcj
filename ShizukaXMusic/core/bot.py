@@ -8,11 +8,11 @@ from ..logging import LOGGER
 
 
 
-class AnonXBot(Client):
+class ShizukaBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot...")
         super().__init__(
-            "AlishaXMusic",
+            "Music",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -33,10 +33,10 @@ class AnonXBot(Client):
                 "Please promote Bot as Admin in Logger Group"
             )
             sys.exit()
-        LOGGER(__name__).info(f"تـم تشغيـل البـوت بنجاح")
+        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n» الايـدي : `{self.id}`\n» الاسـم : {self.name}\n» اليـوز : @{self.username}"
+                config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.id}`\n❄ ɴᴀᴍᴇ : {self.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
             )
         except:
             LOGGER(__name__).error(
