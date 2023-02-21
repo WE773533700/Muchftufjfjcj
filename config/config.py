@@ -33,8 +33,18 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/its-star-boi/ShizukaXMusic")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Star_X_Network")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Best_FriendsFor_Ever")
+CHANNEL = getenv(
+    "CHANNEL", "FH_KP"
+)  # قناه الاشتراك الاجباري مثل هيك https://t.me/M_O_D_Y_CH
+CHANNEL_SUDO = getenv(
+    "CHANNEL_SUDO", "https://t.me/FH_KP"
+)  # قناة السورس هيك https://t.me/M_O_D_Y_CH
+SUPPORT_CHANNEL = getenv(
+    "SUPPORT_CHANNEL", "https://t.me/FH_KP"
+)  #جروب السورس https://t.me/BarGohara
+SUPPORT_GROUP = getenv(
+    "SUPPORT_GROUP", "https://t.me/FH_KP"
+) 
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "5400"))
