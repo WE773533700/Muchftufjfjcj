@@ -5,7 +5,6 @@ import os
 import requests
 import yt_dlp
 from pyrogram import Client, filters
-from YukkiMusic import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
