@@ -47,7 +47,6 @@ from config import BANNED_USERS, CHANNEL_SUDO, CHANNEL, lyrical
 from strings import get_command
 
 
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
 
                         YouTube, app)
 
