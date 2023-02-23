@@ -1197,7 +1197,6 @@ async def play_music(client, CallbackQuery, _):
 
 
 
-@app.on_callback_query(
 
     filters.regex("AnonymousAdmin") & ~BANNED_USERS
 
