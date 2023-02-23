@@ -10,14 +10,14 @@ from pyrogram import filters
 load_dotenv()
 
 # الايبيهات الهاش والايدي بنجبهم من هنا my.telegram.org
-API_ID = int(getenv("API_ID", "28203645"))
-API_HASH = getenv("API_HASH","e70b95ec2f624815d26cfed25b50397a")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH","")
 
 ## توكن البوت بنجيبو من هنا @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","5720569441:AAF8N2s3koA8Z7oLjP1_eLBpz8oq5vUifvg")
+BOT_TOKEN = getenv("BOT_TOKEN","")
 
 # المونج لو ممعكش سيبو زي مهوه
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Ali023:Ali023@cluster0.abctjpf.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # مده الاغنيه بتبقي ٦٠ دقيقه انا مسويها ٣٠٠ تقدر تزودها
 DURATION_LIMIT_MIN = int(
@@ -30,14 +30,14 @@ SONG_DOWNLOAD_DURATION = int(
 ) 
 
 # جروب اللي مرفوع فيه البوت والمساعد ادمن 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001671717166"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # اسم البوت مينفعش تكتبو مزغرف
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","gohara")
 
 # ايديهات المطورين الملاك
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5820455440").split())
+    map(int, getenv("OWNER_ID", "5752175961").split())
 ) 
 
 # سيبو زي مهوه ملهوش لزمه
@@ -135,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # جلسه البايروجران تقدر تجبها من هنا@helal_trmix_BOT
-STRING1 = getenv("STRING_SESSION", "BAAw8CYFktbEq-O1Im1bmXfK5OvU798x6N6nJ7R-1Cr422xuCcw3gJ-Lx96KlK3Rz8--hqya4w4Rq0_lczd4vpi2yzkRkyk097jZG0oMNpbkEPdeLLSVIsdVKteZo2DomLK-NSDmhvxexuVOP7TPi0UZ4aAJTW90H7EhLxn4tNQwukWjzae8m64V_3VPmlJAmR9axBxUWw8E9ndLN4xnfFv9HOlh-0nqd2R4dpByXjX93cXaMLVIm9CO-Usb5BK518fGokYcddXaBadhoR_mM1iGAT0oocsD6UeJsyD99qphT8wfTl4JCjEfzuTb0N0xtExX61y1dcROM8-TymYr_rzqAAAAAVHNmhkA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
