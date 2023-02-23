@@ -1200,8 +1200,6 @@ async def play_music(client, CallbackQuery, _):
 
     filters.regex("AnonymousAdmin") & ~BANNED_USERS
 
-)
-
 async def anonymous_check(client, CallbackQuery):
 
     try:
