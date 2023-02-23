@@ -126,7 +126,6 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     filters.command(PLAY_COMMAND) & filters.group & ~filters.edited & ~BANNED_USERS
 )
 @PlayWrapper
-
 async def play_commnd(
 
     client,
