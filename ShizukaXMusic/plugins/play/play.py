@@ -49,7 +49,6 @@ from strings import get_command
 
                      
 
-from YukkiMusic.core.call import Yukki
 
 from YukkiMusic.utils import seconds_to_min, time_to_seconds
 
