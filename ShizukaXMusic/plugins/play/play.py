@@ -1044,7 +1044,6 @@ async def play_commnd(
 
 
 
-@app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
 async def play_music(client, CallbackQuery, _):
 
