@@ -47,8 +47,7 @@ from config import BANNED_USERS, CHANNEL_SUDO, CHANNEL, lyrical
 from strings import get_command
 
 
-
-                        YouTube, app)
+                     
 
 from YukkiMusic.core.call import Yukki
 
