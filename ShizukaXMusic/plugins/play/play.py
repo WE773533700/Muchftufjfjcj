@@ -50,29 +50,29 @@ from strings import get_command
                      
 
 
-from YukkiMusic.utils import seconds_to_min, time_to_seconds
+from ShizukaXMusic.utils import seconds_to_min, time_to_seconds
 
-from YukkiMusic.utils.channelplay import get_channeplayCB
+from ShizukaXMusic.utils.channelplay import get_channeplayCB
 
-from YukkiMusic.utils.database import is_video_allowed
+from ShizukaXMusic.utils.database import is_video_allowed
 
-from YukkiMusic.utils.decorators.language import languageCB
+from ShizukaXMusic.utils.decorators.language import languageCB
 
-from YukkiMusic.utils.decorators.play import PlayWrapper
+from ShizukaXMusic.utils.decorators.play import PlayWrapper
 
-from YukkiMusic.utils.formatters import formats
+from ShizukaXMusic.utils.formatters import formats
 
-from YukkiMusic.utils.inline.play import (livestream_markup,
+from ShizukaXMusic.utils.inline.play import (livestream_markup,
 
                                           playlist_markup,
 
                                           slider_markup, track_markup)
 
-from YukkiMusic.utils.inline.playlist import botplaylist_markup
+from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
 
-from YukkiMusic.utils.logger import play_logs
+from ShizukaXMusic.utils.logger import play_logs
 
-from YukkiMusic.utils.stream.stream import stream
+from ShizukaXMusic import stream
 
 
 
