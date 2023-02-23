@@ -1,92 +1,31 @@
 import random
-
 import string
-
 from ast import ExceptHandler
 
-
-
 from pyrogram import filters
-
-from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
-
-                            Message)
-
+from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
-
-
 import config
-
-from config import BANNED_USERS, CHANNEL_SUDO, CHANNEL, lyrical
-
+from config import BANNED_USERS, lyrical
 from strings import get_command
-
-
-                     
-
-
+from ShizukaXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from ShizukaXMusic.core.call import Shizuka
 from ShizukaXMusic.utils import seconds_to_min, time_to_seconds
-
 from ShizukaXMusic.utils.channelplay import get_channeplayCB
-
 from ShizukaXMusic.utils.database import is_video_allowed
-
 from ShizukaXMusic.utils.decorators.language import languageCB
-
 from ShizukaXMusic.utils.decorators.play import PlayWrapper
-
 from ShizukaXMusic.utils.formatters import formats
-
-from ShizukaXMusic.utils.inline.play import (livestream_markup,
-
-                                          playlist_markup,
-
-                                          slider_markup, track_markup)
-
-from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
-
-from ShizukaXMusic.utils.logger import play_logs
-
-
-
-
-force_btn = InlineKeyboardMarkup(
-
-    [
-
-        [
-
-            InlineKeyboardButton(
-
-                text="قناة البوت", url=f"{CHANNEL_SUDO}"
-
-            ),                        
-
-        ],        
-
-    ]
-
+from ShizukaXMusic.utils.inline.play import (
+    livestream_markup,
+    playlist_markup,
+    slider_markup,
+    track_markup,
 )
-
-
-
-async def check_is_joined(message):    
-
-    try:
-
-        userid = message.from_user.id
-
-        status = await app.get_chat_member(f"{CHANNEL}", userid)
-
-        return True
-
-    except Exception:
-
-        await message.reply_text( "**◇︰ عذرا، عليك لاشتراك في قناة البوت أولاً." ,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
-
-        return False
-
+from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
+from ShizukaXMusic.utils.logger import play_logs
+from ShizukaXMusic.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
