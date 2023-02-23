@@ -72,7 +72,6 @@ from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
 
 from ShizukaXMusic.utils.logger import play_logs
 
-from ShizukaXMusic import stream
 
 
 
