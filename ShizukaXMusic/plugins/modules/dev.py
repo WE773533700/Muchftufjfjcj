@@ -3,7 +3,6 @@ from pyrogram import filters
 
 
 @app.on_message(filters.command(["مطور","المطور"]))
-async def zohary(client: Client, message: Message):
     usr = await client.get_users(DEV_BOT)
     name = usr.first_name
     user = await client.get_chat(DEV_BOT)
